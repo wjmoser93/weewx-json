@@ -1,6 +1,5 @@
 # weewx-json
 Extension for JSON output from weewx
-This is a fork of [weewx-json](https://github.com/teeks99/weewx-json) with some of my enhancements.
 
 This extension provides a skin that is not designed to be used from a web browser, rather for consumption from another
 type of client...smartphone app, dynamic javascript page, automated bot.
