@@ -53,8 +53,284 @@
 		#if $current.UV.has_data
         "UV Index": {"value": $current.UV.raw, "units": "$current.UV.format(" ").lstrip()"},
         #end if
+		#if $current.radiation.has_data
+        "radiation": {"value": $current.radiation.raw, "units": "$current.radiation.format(" ").lstrip()"},
+        #end if
+		#if $current.appTemp.has_data
+        "appTemp": {"value": $current.appTemp.raw, "units": "$current.appTemp.format(" ").lstrip()"},
+        #end if
+		#if $current.appTemp1.has_data
+        "appTemp1": {"value": $current.appTemp1.raw, "units": "$current.appTemp1.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus1.has_data
+        "batteryStatus1": {"value": $current.batteryStatus1.raw, "units": "$current.batteryStatus1.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus2.has_data
+        "batteryStatus2": {"value": $current.batteryStatus2.raw, "units": "$current.batteryStatus2.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus3.has_data
+        "batteryStatus3": {"value": $current.batteryStatus3.raw, "units": "$current.batteryStatus3.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus4.has_data
+        "batteryStatus4": {"value": $current.batteryStatus4.raw, "units": "$current.batteryStatus4.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus5.has_data
+        "batteryStatus5": {"value": $current.batteryStatus5.raw, "units": "$current.batteryStatus5.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus6.has_data
+        "batteryStatus6": {"value": $current.batteryStatus6.raw, "units": "$current.batteryStatus6.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus7.has_data
+        "batteryStatus7": {"value": $current.batteryStatus7.raw, "units": "$current.batteryStatus7.format(" ").lstrip()"},
+        #end if
+		#if $current.batteryStatus8.has_data
+        "batteryStatus8": {"value": $current.batteryStatus8.raw, "units": "$current.batteryStatus8.format(" ").lstrip()"},
+        #end if
+		#if $current.cloudbase.has_data
+        "cloudbase": {"value": $current.cloudbase.raw, "units": "$current.cloudbase.format(" ").lstrip()"},
+        #end if
+		#if $current.co.has_data
+        "co": {"value": $current.co.raw, "units": "$current.co.format(" ").lstrip()"},
+        #end if
+		#if $current.co2.has_data
+        "co2": {"value": $current.co2.raw, "units": "$current.co2.format(" ").lstrip()"},
+        #end if
+		#if $current.consBatteryVoltage.has_data
+        "consBatteryVoltage": {"value": $current.consBatteryVoltage.raw, "units": "$current.consBatteryVoltage.format(" ").lstrip()"},
+        #end if
+		#if $current.dewpoint1.has_data
+        "dewpoint1": {"value": $current.dewpoint1.raw, "units": "$current.dewpoint1.format(" ").lstrip()"},
+        #end if
+		#if $current.ET.has_data
+        "ET": {"value": $current.ET.raw, "units": "$current.ET.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid1.has_data
+        "extraHumid1": {"value": $current.extraHumid1.raw, "units": "$current.extraHumid1.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid2.has_data
+        "extraHumid2": {"value": $current.extraHumid2.raw, "units": "$current.extraHumid2.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid3.has_data
+        "extraHumid3": {"value": $current.extraHumid3.raw, "units": "$current.extraHumid3.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid4.has_data
+        "extraHumid4": {"value": $current.extraHumid4.raw, "units": "$current.extraHumid4.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid5.has_data
+        "extraHumid5": {"value": $current.extraHumid5.raw, "units": "$current.extraHumid5.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid6.has_data
+        "extraHumid6": {"value": $current.extraHumid6.raw, "units": "$current.extraHumid6.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid7.has_data
+        "extraHumid7": {"value": $current.extraHumid7.raw, "units": "$current.extraHumid7.format(" ").lstrip()"},
+        #end if
+		#if $current.extraHumid8.has_data
+        "extraHumid8": {"value": $current.extraHumid8.raw, "units": "$current.extraHumid8.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp1.has_data
+        "extraTemp1": {"value": $current.extraTemp1.raw, "units": "$current.extraTemp1.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp2.has_data
+        "extraTemp2": {"value": $current.extraTemp2.raw, "units": "$current.extraTemp2.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp3.has_data
+        "extraTemp3": {"value": $current.extraTemp3.raw, "units": "$current.extraTemp3.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp4.has_data
+        "extraTemp4": {"value": $current.extraTemp4.raw, "units": "$current.extraTemp4.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp5.has_data
+        "extraTemp5": {"value": $current.extraTemp5.raw, "units": "$current.extraTemp5.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp6.has_data
+        "extraTemp6": {"value": $current.extraTemp6.raw, "units": "$current.extraTemp6.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp7.has_data
+        "extraTemp7": {"value": $current.extraTemp7.raw, "units": "$current.extraTemp7.format(" ").lstrip()"},
+        #end if
+		#if $current.extraTemp8.has_data
+        "extraTemp8": {"value": $current.extraTemp8.raw, "units": "$current.extraTemp8.format(" ").lstrip()"},
+        #end if
+		#if $current.forecast.has_data
+        "forecast": {"value": $current.forecast.raw, "units": "$current.forecast.format(" ").lstrip()"},
+        #end if
+		#if $current.hail.has_data
+        "hail": {"value": $current.hail.raw, "units": "$current.hail.format(" ").lstrip()"},
+        #end if
+		#if $current.hailBatteryStatus.has_data
+        "hailBatteryStatus": {"value": $current.hailBatteryStatus.raw, "units": "$current.hailBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.hailRate.has_data
+        "hailRate": {"value": $current.hailRate.raw, "units": "$current.hailRate.format(" ").lstrip()"},
+        #end if
+		#if $current.heatindex.has_data
+        "heatindex": {"value": $current.heatindex.raw, "units": "$current.heatindex.format(" ").lstrip()"},
+        #end if
+		#if $current.heatindex1.has_data
+        "heatindex1": {"value": $current.heatindex1.raw, "units": "$current.heatindex1.format(" ").lstrip()"},
+        #end if
+		#if $current.inDewpoint.has_data
+        "inDewpoint": {"value": $current.inDewpoint.raw, "units": "$current.inDewpoint.format(" ").lstrip()"},
+        #end if
+		#if $current.inTempBatteryStatus.has_data
+        "inTempBatteryStatus": {"value": $current.inTempBatteryStatus.raw, "units": "$current.inTempBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.leafTemp1.has_data
+        "leafTemp1": {"value": $current.leafTemp1.raw, "units": "$current.leafTemp1.format(" ").lstrip()"},
+        #end if
+		#if $current.leafTemp2.has_data
+        "leafTemp2": {"value": $current.leafTemp2.raw, "units": "$current.leafTemp2.format(" ").lstrip()"},
+        #end if
+		#if $current.leafWet1.has_data
+        "leafWet1": {"value": $current.leafWet1.raw, "units": "$current.leafWet1.format(" ").lstrip()"},
+        #end if
+		#if $current.leafWet2.has_data
+        "leafWet2": {"value": $current.leafWet2.raw, "units": "$current.leafWet2.format(" ").lstrip()"},
+        #end if
+		#if $current.lightning_distance.has_data
+        "lightning_distance": {"value": $current.lightning_distance.raw, "units": "$current.lightning_distance.format(" ").lstrip()"},
+        #end if
+		#if $current.lightning_disturber_count.has_data
+        "lightning_disturber_count": {"value": $current.lightning_disturber_count.raw, "units": "$current.lightning_disturber_count.format(" ").lstrip()"},
+        #end if
+		#if $current.lightning_energy.has_data
+        "lightning_energy": {"value": $current.lightning_energy.raw, "units": "$current.lightning_energy.format(" ").lstrip()"},
+        #end if
+		#if $current.lightning_noise_count.has_data
+        "lightning_noise_count": {"value": $current.lightning_noise_count.raw, "units": "$current.lightning_noise_count.format(" ").lstrip()"},
+        #end if
+		#if $current.lightning_strike_count.has_data
+        "lightning_strike_count": {"value": $current.lightning_strike_count.raw, "units": "$current.lightning_strike_count.format(" ").lstrip()"},
+        #end if
 		#if $current.luminosity.has_data
         "luminosity": {"value": $current.luminosity.raw, "units": "$current.luminosity.format(" ").lstrip()"},
+        #end if
+		#if $current.maxSolarRad.has_data
+        "maxSolarRad": {"value": $current.maxSolarRad.raw, "units": "$current.maxSolarRad.format(" ").lstrip()"},
+        #end if
+		#if $current.nh3.has_data
+        "nh3": {"value": $current.nh3.raw, "units": "$current.nh3.format(" ").lstrip()"},
+        #end if
+		#if $current.no2.has_data
+        "no2": {"value": $current.no2.raw, "units": "$current.no2.format(" ").lstrip()"},
+        #end if
+		#if $current.noise.has_data
+        "noise": {"value": $current.noise.raw, "units": "$current.noise.format(" ").lstrip()"},
+        #end if
+		#if $current.o3.has_data
+        "o3": {"value": $current.o3.raw, "units": "$current.o3.format(" ").lstrip()"},
+        #end if
+		#if $current.outTempBatteryStatus.has_data
+        "outTempBatteryStatus": {"value": $current.outTempBatteryStatus.raw, "units": "$current.outTempBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.pb.has_data
+        "pb": {"value": $current.pb.raw, "units": "$current.pb.format(" ").lstrip()"},
+        #end if
+		#if $current.pm10_0.has_data
+        "pm10_0": {"value": $current.pm10_0.raw, "units": "$current.pm10_0.format(" ").lstrip()"},
+        #end if
+		#if $current.pm1_0.has_data
+        "pm1_0": {"value": $current.pm1_0.raw, "units": "$current.pm1_0.format(" ").lstrip()"},
+        #end if
+		#if $current.pm2_5.has_data
+        "pm2_5": {"value": $current.pm2_5.raw, "units": "$current.pm2_5.format(" ").lstrip()"},
+        #end if
+		#if $current.pressure.has_data
+        "pressure": {"value": $current.pressure.raw, "units": "$current.pressure.format(" ").lstrip()"},
+        #end if
+		#if $current.rainBatteryStatus.has_data
+        "rainBatteryStatus": {"value": $current.rainBatteryStatus.raw, "units": "$current.rainBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.referenceVoltage.has_data
+        "referenceVoltage": {"value": $current.referenceVoltage.raw, "units": "$current.referenceVoltage.format(" ").lstrip()"},
+        #end if
+		#if $current.rxCheckPercent.has_data
+        "rxCheckPercent": {"value": $current.rxCheckPercent.raw, "units": "$current.rxCheckPercent.format(" ").lstrip()"},
+        #end if
+		#if $current.signal1.has_data
+        "signal1": {"value": $current.signal1.raw, "units": "$current.signal1.format(" ").lstrip()"},
+        #end if
+		#if $current.signal2.has_data
+        "signal2": {"value": $current.signal2.raw, "units": "$current.signal2.format(" ").lstrip()"},
+        #end if
+		#if $current.signal3.has_data
+        "signal3": {"value": $current.signal3.raw, "units": "$current.signal3.format(" ").lstrip()"},
+        #end if
+		#if $current.signal4.has_data
+        "signal4": {"value": $current.signal4.raw, "units": "$current.signal4.format(" ").lstrip()"},
+        #end if
+		#if $current.signal5.has_data
+        "signal5": {"value": $current.signal5.raw, "units": "$current.signal5.format(" ").lstrip()"},
+        #end if
+		#if $current.signal6.has_data
+        "signal6": {"value": $current.signal6.raw, "units": "$current.signal6.format(" ").lstrip()"},
+        #end if
+		#if $current.signal7.has_data
+        "signal7": {"value": $current.signal7.raw, "units": "$current.signal7.format(" ").lstrip()"},
+        #end if
+		#if $current.signal8.has_data
+        "signal8": {"value": $current.signal8.raw, "units": "$current.signal8.format(" ").lstrip()"},
+        #end if
+		#if $current.snow.has_data
+        "snow": {"value": $current.snow.raw, "units": "$current.snow.format(" ").lstrip()"},
+        #end if
+		#if $current.snowBatteryStatus.has_data
+        "snowBatteryStatus": {"value": $current.snowBatteryStatus.raw, "units": "$current.snowBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.snowDepth.has_data
+        "snowDepth": {"value": $current.snowDepth.raw, "units": "$current.snowDepth.format(" ").lstrip()"},
+        #end if
+		#if $current.snowMoisture.has_data
+        "snowMoisture": {"value": $current.snowMoisture.raw, "units": "$current.snowMoisture.format(" ").lstrip()"},
+        #end if
+		#if $current.snowRate.has_data
+        "snowRate": {"value": $current.snowRate.raw, "units": "$current.snowRate.format(" ").lstrip()"},
+        #end if
+		#if $current.so2.has_data
+        "so2": {"value": $current.so2.raw, "units": "$current.so2.format(" ").lstrip()"},
+        #end if
+		#if $current.soilMoist1.has_data
+        "soilMoist1": {"value": $current.soilMoist1.raw, "units": "$current.soilMoist1.format(" ").lstrip()"},
+        #end if
+		#if $current.soilMoist2.has_data
+        "soilMoist2": {"value": $current.soilMoist2.raw, "units": "$current.soilMoist2.format(" ").lstrip()"},
+        #end if
+		#if $current.soilMoist3.has_data
+        "soilMoist3": {"value": $current.soilMoist3.raw, "units": "$current.soilMoist3.format(" ").lstrip()"},
+        #end if
+		#if $current.soilMoist4.has_data
+        "soilMoist4": {"value": $current.soilMoist4.raw, "units": "$current.soilMoist4.format(" ").lstrip()"},
+        #end if
+		#if $current.soilTemp1.has_data
+        "soilTemp1": {"value": $current.soilTemp1.raw, "units": "$current.soilTemp1.format(" ").lstrip()"},
+        #end if
+		#if $current.soilTemp2.has_data
+        "soilTemp2": {"value": $current.soilTemp2.raw, "units": "$current.soilTemp2.format(" ").lstrip()"},
+        #end if
+		#if $current.soilTemp3.has_data
+        "soilTemp3": {"value": $current.soilTemp3.raw, "units": "$current.soilTemp3.format(" ").lstrip()"},
+        #end if
+		#if $current.soilTemp4.has_data
+        "soilTemp4": {"value": $current.soilTemp4.raw, "units": "$current.soilTemp4.format(" ").lstrip()"},
+        #end if
+		#if $current.supplyVoltage.has_data
+        "supplyVoltage": {"value": $current.supplyVoltage.raw, "units": "$current.supplyVoltage.format(" ").lstrip()"},
+        #end if
+		#if $current.txBatteryStatus.has_data
+        "txBatteryStatus": {"value": $current.txBatteryStatus.raw, "units": "$current.txBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.uvBatteryStatus.has_data
+        "uvBatteryStatus": {"value": $current.uvBatteryStatus.raw, "units": "$current.uvBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.windBatteryStatus.has_data
+        "windBatteryStatus": {"value": $current.windBatteryStatus.raw, "units": "$current.windBatteryStatus.format(" ").lstrip()"},
+        #end if
+		#if $current.windGustDir.has_data
+        "windGustDir": {"value": $current.windGustDir.raw, "units": "$current.windGustDir.format(" ").lstrip()"},
+        #end if
+		#if $current.windrun.has_data
+        "windrun": {"value": $current.windrun.raw, "units": "$current.windrun.format(" ").lstrip()"},
         #end if
         ## Last value can't end with a comma
         "void_end": null
